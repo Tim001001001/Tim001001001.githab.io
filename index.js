@@ -17,9 +17,9 @@ $(document).ready(function () {
             $('input').val("");
         }
     });
-$("div.item_list").on('click', 'button.Del', function() {
-
-});
+	$("div.item_list").on('click', 'button.Del', function() {
+		$("div.item").filter(":contains('this')").remove();
+	});
 
 
 
